@@ -1,0 +1,99 @@
+@media only screen and (max-width: 767px) {
+  .container {
+    width: 470px; }
+  /*============================
+	=            home            =
+	============================*/
+  .header-nav li {
+    float: left;
+    text-align: center;
+    width: 25%;
+    height: 100%;
+    border-right: 1px solid #000; }
+    .header-nav li:last-child {
+      border-right: none; }
+    .header-nav li a {
+      font-size: 0;
+      height: 100%; }
+    .header-nav li i {
+      position: absolute;
+      left: 0;
+      text-align: center;
+      width: 100%; }
+  .header-nav {
+    height: 52px; }
+  .col-md-9 {
+    margin-top: 20px; }
+  .col-md-9.nopadding-left {
+    padding-left: 15px; }
+  .skill-con .col-md-1 {
+    height: auto;
+    margin-top: 20px; }
+    .skill-con .col-md-1 .skill-label {
+      position: static;
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+      margin: 0 auto;
+      width: auto; }
+  /*=====  End of home  ======*/
+  /*===============================
+	=            contact            =
+	===============================*/
+  /*=====  End of contact  ======*/ }
+
+@media only screen and (max-width: 1000px) and (min-width: 768px) {
+  .main-wrapper {
+    margin: 50px 0; }
+  .header figure {
+    text-align: center; }
+    .header figure img {
+      height: 675px; }
+  .header-nav li {
+    float: left;
+    width: 25%;
+    height: 100%;
+    border-right: 1px solid #000; }
+    .header-nav li:last-child {
+      border-right: none; }
+  .col-md-9 {
+    margin-top: 20px; }
+  .col-md-9.nopadding-left {
+    padding-left: 15px; }
+  .skill-con .col-md-1 {
+    height: auto;
+    margin-top: 20px; }
+    .skill-con .col-md-1 .skill-label {
+      position: static;
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+      margin: 0 auto;
+      width: auto; } }
+
+@media only screen and (max-width: 1000px) {
+  /*===============================
+	=            contact            =
+	===============================*/
+  .contact-box i {
+    position: static;
+    margin: 10px 0; }
+  .contact-box .contact-item-con {
+    width: 100%; }
+  /*=====  End of contact  ======*/ }
+
+@media only screen and (max-width: 480px) {
+  .main-wrapper {
+    margin-top: 10px; }
+  .container {
+    width: auto; }
+  /*============================
+	=            home            =
+	============================*/
+  .intro-info-list .property, .intro-info-list .value {
+    float: none;
+    width: auto;
+    text-align: center; }
+  /*=====  End of home  ======*/
+  /*===============================
+	=            contact            =
+	===============================*/
+  /*=====  End of contact  ======*/ }
