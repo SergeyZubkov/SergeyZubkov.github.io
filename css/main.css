@@ -74,7 +74,10 @@ a {
     padding: 2px 7px;
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg); }
-
+  .header-img img {
+    width: 100%;
+  }
+  
 .header-nav {
   overflow: hidden; }
   .header-nav li {
