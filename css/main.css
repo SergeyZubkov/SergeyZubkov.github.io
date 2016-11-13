@@ -64,6 +64,8 @@ a {
 
 .header-img {
   position: relative; }
+  .header-img img {
+    width: 100%; }
   .header-img figcaption {
     position: absolute;
     top: 43px;
@@ -74,10 +76,7 @@ a {
     padding: 2px 7px;
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg); }
-  .header-img img {
-    width: 100%;
-  }
-  
+
 .header-nav {
   overflow: hidden; }
   .header-nav li {
@@ -376,6 +375,9 @@ textarea.form-control {
   display: block;
   margin-bottom: 50px;
   border: none; }
+  .portfolio-item:hover {
+    cursor: pointer;
+    color: #333; }
   .portfolio-item:hover .portfolio-item-img:before {
     z-index: 1;
     -webkit-transform: scaleX(1);
