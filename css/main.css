@@ -375,9 +375,6 @@ textarea.form-control {
   display: block;
   margin-bottom: 50px;
   border: none; }
-  .portfolio-item:hover {
-    cursor: pointer;
-    color: #333; }
   .portfolio-item:hover .portfolio-item-img:before {
     z-index: 1;
     -webkit-transform: scaleX(1);
