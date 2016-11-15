@@ -137,14 +137,19 @@ a, a:hover {
 .container {
   max-width: 940px;
   margin: 0 auto; }
-
+.hide {
+  display: none;
+}
 
 #header {
   padding: 20px 0;
   position: absolute;
   top: 20px;
   width: 100%; }
-
+#header .logo.left {
+  position: relative;
+  z-index: 3;
+}
 .nav {
   margin-top: 5px; }
 
@@ -160,7 +165,27 @@ a, a:hover {
     font-weight: bold; }
   .nav li a:hover {
     color: #fed136; }
-
+  .nav-close {
+    color: #fff;
+    font-size: 35px;
+    transform: rotate(-45deg);
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    cursor: pointer;
+    display: none;
+  }
+.menu-icon {
+  cursor: pointer;
+  display: none;
+}
+.menu-icon__line {
+  display: block;
+  height: 2px;
+  width: 30px;
+  background: #fff;
+  margin-bottom: 5px;
+}
 #home {
   height: 700px;
   padding-top: 270px;
@@ -523,6 +548,31 @@ h5.title {
   --------------------------------Media Queries--------------------------------------------------------------
   -----------------------------------------------------------------------------------------------------------
 */
+
+@media screen and (max-width: 580px) {
+  .nav.right {
+    display: none;
+    margin: 0;
+    position: absolute;
+    padding: 70px 10px;
+    float: none;
+    top: -20px;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0, 0.6)
+  }
+  .nav.right li{
+    float: none;
+    text-align: center;
+    margin: 20px 0;
+  }
+  .menu-icon {
+    display: block;
+  }
+  .menu-close {
+    display: block;
+  }
+}
 
 @media only screen and (max-width: 960px) { 
   #header {

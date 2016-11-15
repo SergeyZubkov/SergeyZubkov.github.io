@@ -13,12 +13,19 @@
 				<div class="logo left">
 					<a href="#"><img src="img/logo.png" alt=""></a>
 				</div>
+				<span class="menu-icon right" onclick='openMenu()'>
+					<span class="menu-icon__line"></span>
+					<span class="menu-icon__line"></span>
+					<span class="menu-icon__line"></span>
+
+				</span>
 				<ul class="nav right">
 					<li><a href="#" text="">Home</a></li>
 					<li><a href="#" text="">Service</a></li>
 					<li><a href="#" text="">Portfolio</a></li>
 					<li><a href="#" text="">About</a></li>
 					<li><a href="#" text="">Contacts</a></li>
+					<li class="nav-close" onclick="closeMenu()">+</li>
 				</ul>
 			</div>
 		</div>
@@ -256,5 +263,17 @@
 		</div>
 	</div>
 	</div>
+	<script type="text/javascript">
+	var menuIcon = document.querySelector('.menu-icon');
+	var menu = document.querySelector('.nav');
+	var openMenu = function() {
+		menuIcon.style.display = 'none'
+		menu.style.display = 'block'
+	}
+	var closeMenu = function() {
+		menuIcon.style.display = 'block'
+		menu.style.display = 'none'
+	}
+</script>
 </body>
 </html>
