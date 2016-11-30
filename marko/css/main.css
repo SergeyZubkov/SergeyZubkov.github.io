@@ -1843,14 +1843,14 @@ img
 =            TOP NAVIGATION            =
 ======================================*/
 
-.logo-top
+.navbar-header
 {
     line-height: 29px;
 
     float: left;
     overflow: hidden;
 }
-.logo-top a
+.navbar-header a
 {
     float: left;
 }
@@ -1887,9 +1887,9 @@ img
 .nav-top
 {
     line-height: 41px; 
-
-    width: 100%;
-    padding: 10px 0 0 0;
+    margin-right: -15px;
+    margin-left: -15px;
+    padding: 20px 0 0 0;
 }
 
 .nav-horizont

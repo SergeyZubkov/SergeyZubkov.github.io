@@ -1,16 +1,38 @@
-
-@media (min-width: 992px) and (max-width: 1199px) {
-	
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-
-}
-
+/*large - dekstops*/
+/*middle - dekstops*/
+/*small - tablets*/
 @media (max-width: 767px) {
+  .nav-top {
+    background: #333; }
+  .nav-toggle {
+    display: block; }
+  .navbar-header {
+    float: none;
+    border-bottom: 1px solid #999;
+    padding: 0 15px 10px; }
+  .nav-top {
+    padding-top: 10px; }
+  .nav-top nav {
+    width: 100%; }
+  .nav-horizont > .nav-list li {
+    display: block; }
+  .nav-list a {
+    border: none; }
+  .nav-list a:hover {
+    border: none; }
+  .top-content-inner-wrapper {
+    padding-top: 0; }
+  .top-content-text {
+    margin-bottom: 50px; }
+  .call-to-action p {
+    padding: 0; }
+  .testimonial-img {
+    float: none;
+    width: 120px;
+    margin: 0 auto; }
+  .testimonial-text {
+    width: 100%; } }
 
-}
-
-@media (max-width: 415px) {
-	
-}
+@media (min-width: 768px) {
+  .nav-collapse.collapse {
+    display: block; } }
