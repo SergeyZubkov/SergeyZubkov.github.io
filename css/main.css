@@ -127,6 +127,21 @@ a {
     color: #fff;
     background: #cd5353; }
 
+.header-nav_mobile {
+    display: none;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #85878b;
+    padding: 15px 25px;
+    background: #33373d;
+    text-align: center;
+    cursor: pointer;
+  }
+.header-nav_mobile  i {
+  margin-right: 15px;
+}
+
 /*----------  intro  ----------*/
 .intro h2 {
   font-size: 25px;

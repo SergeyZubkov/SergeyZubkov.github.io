@@ -17,4 +17,15 @@ $(document).ready(function() {
 				scrollTop: 0
 			}, "1000", 'swing')
 	})
+
+	$('.header-nav_mobile').on('click', function() {
+		var $this = $(this);
+		if($this.hasClass('active')) {
+			$this.removeClass('active');
+			$('.header-nav').slideUp('fast');
+		}else {
+			$this.addClass('active');
+			$('.header-nav').slideDown('sloy');
+		}
+	})
 });

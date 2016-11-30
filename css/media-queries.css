@@ -2,24 +2,6 @@
   /*============================
 	=            home            =
 	============================*/
-  .header-nav li {
-    float: left;
-    text-align: center;
-    width: 33.33%;
-    height: 100%;
-    border-right: 1px solid #000; }
-    .header-nav li:last-child {
-      border-right: none; }
-    .header-nav li a {
-      font-size: 0;
-      height: 100%; }
-    .header-nav li i {
-      position: absolute;
-      left: 0;
-      text-align: center;
-      width: 100%; }
-  .header-nav {
-    height: 52px; }
   .col-md-9 {
     margin-top: 20px; }
   .col-md-9.nopadding-left {
@@ -34,10 +16,8 @@
       margin: 0 auto;
       width: auto; }
   /*=====  End of home  ======*/
-  /*===============================
-	=            contact            =
-	===============================*/
-  /*=====  End of contact  ======*/ }
+}
+  
 
 @media only screen and (max-width: 1000px) and (min-width: 768px) {
   .header-img {
@@ -48,13 +28,6 @@
     text-align: center; }
     .header figure img {
       height: 675px; }
-  .header-nav li {
-    float: left;
-    width: 33.33%;
-    height: 100%;
-    border-right: 1px solid #000; }
-    .header-nav li:last-child {
-      border-right: none; }
   .col-md-9 {
     margin-top: 20px; }
   .col-md-9.nopadding-left {
@@ -70,10 +43,14 @@
       width: auto; } }
 
 @media only screen and (max-width: 1000px) {
+  .header-nav_mobile {
+    display: block;
+  }
+  .header-nav {
+    display: none;
+  }
   .header-img {
     display: none; }
-  .header-nav li {
-    width: 33.33%; }
   /*===============================
 	=            contact            =
 	===============================*/
