@@ -94,17 +94,17 @@
 							<h4>Напишите мне</h4>
 						</div>
 						<div class="send-me-form-con">
-							<form action="#" class="sedn-me-form">
+							<form id='form' class="sedn-me-form">
 								<div class="row">
 									<div class="col-md-6">
-										<input type="text" name='name' class="form-control" placeholder="Имя">
+										<input type="text" name='name' class="form-control" placeholder="Имя" required='required'>
 									</div>
 									<div class="col-md-6">
-										<input type="email" name='email' class="form-control" placeholder="Эл. почта">
+										<input type="email" name='email' class="form-control" placeholder="Эл. почта" required='required'>
 									</div>
 								</div>	
-								<input name='subject' type="text" class="form-control" placeholder="Тема">
-								<textarea name="message" class='form-control' id="message" cols="30" rows="10" placeholder="Сообщение"></textarea>
+								<input name='subject' type="text" class="form-control" placeholder="Тема" required='required'>
+								<textarea name="text" class='form-control' id="text" cols="30" rows="10" placeholder="Сообщение" required='required'></textarea>
 								<button type="submit" class="btn btn-submit">Отправить</button>
 							</form>
 						</div>
