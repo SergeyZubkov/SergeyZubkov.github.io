@@ -352,7 +352,7 @@ textarea {
 /* --------------------------- Media Queries-----------------------------*/
 
 @media screen and (max-width: 500px) {
-	section {
+	section, .wrapper {
 		height: 100%;
 		border-radius: 0;
 		box-shadow: none;
