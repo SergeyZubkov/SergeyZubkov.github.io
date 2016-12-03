@@ -57,6 +57,35 @@ a:hover {
 	color: #5F6888;
 }
 
+.wrapper {
+	position: relative;
+	z-index: 1;
+	width: 400px;
+	height: 450px;
+	background:  #E7E9EF;
+	border-radius: 5px;
+	box-shadow: 0 0 8px 0 #5F6888;
+	overflow: hidden;
+}
+/* Change route animation*/
+
+.view.ng-enter{
+  right: -100%;
+}
+
+.view.ng-enter.ng-enter-active{
+  right: 0%;
+}
+
+.view.ng-leave{
+  left: 0%;
+}
+
+.view.ng-leave.ng-leave-active{
+  left: 100%;
+}
+
+
 #decks-list {
 	margin: 20px 0;
 }
@@ -109,14 +138,13 @@ a:hover {
 }
 
 section {
-	position: relative;
+	position: absolute;
 	z-index: 1;
 	width: 400px;
 	height: 450px;
 	background:  #E7E9EF;
 	padding: 20px;
-	border-radius: 5px;
-	box-shadow: 0 0 8px 0 #5F6888;
+	transition: 0.3s;
 }
 
 input {
