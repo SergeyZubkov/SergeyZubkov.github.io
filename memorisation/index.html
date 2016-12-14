@@ -6,11 +6,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/anim-in-out.css">
 	<link rel="icon" type="image/x-icon" href="favicon.ico">
 <body>
 
   <div class="wrapper">
-  	<section ng-view class='view'></section>
+  	<section ng-view class='view anim-in-out anim-slide-left' data-anim-speed='700' data-anim-sync='true'></section>
   </div>
 
 	<script src="libs/angular/angular.min.js"></script>
@@ -18,6 +19,8 @@
 	<script src="libs/angular-route/angular-route.min.js"></script>
 	<script src="libs/angular-animate/angular-animate.min.js"></script>
 	<script src="libs/underscore/underscore-min.js"></script>
+	<script src="libs/anim-in-out.js"></script>
+
 
 
 	<script src='js/filters/Filters.js'></script>

@@ -1,6 +1,7 @@
 angular.module('app',[
 	'ngRoute',
 	'ngAnimate',
+	'anim-in-out',
 	'controllers.CardCtrl',
 	'controllers.CreateCardCtrl',
 	'controllers.DeckCtrl',

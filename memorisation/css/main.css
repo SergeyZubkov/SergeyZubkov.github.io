@@ -59,32 +59,17 @@ a:hover {
 
 .wrapper {
 	position: relative;
-	z-index: 1;
+	z-index: 0;
 	width: 400px;
 	height: 450px;
 	background:  #E7E9EF;
 	border-radius: 5px;
 	box-shadow: 0 0 8px 0 #5F6888;
+}
+
+.route-change-anim .wrapper {
 	overflow: hidden;
 }
-/* Change route animation*/
-
-.view.ng-enter{
-  right: -100%;
-}
-
-.view.ng-enter.ng-enter-active{
-  right: 0%;
-}
-
-.view.ng-leave{
-  left: 0%;
-}
-
-.view.ng-leave.ng-leave-active{
-  left: 100%;
-}
-
 
 #decks-list {
 	margin: 20px 0;
@@ -110,26 +95,43 @@ a:hover {
 	position: relative;
 }
 
+.stack, .stack li, .stack li [ng-include], .card-wrapper {
+	min-height: 410px;
+}
+
 .stack li {
 	position: absolute;
 	opacity: 0;
 	top: 0;
-    left: 100%;
+    left: 0%;
 	float: left;
 	width: 360px;
 	height: 100%;
 	margin-right: 20px;
-	-webkit-transition: 1s ease-out;
-	transition: 1s ease-out;
+	-webkit-transition: .5s ease-out;
+	transition: .5s ease-out;
 }
 .stack li.active {
-	left: 0;
+	opacity: 1;
+}
+.stack li.ng-leave {
+	opacity: 0;
+	z-index: -1;
+}
+.stack li.active-add {
+	left: 100%;
+}
+.stack li.active-add.active-add-active {
+	left: 0%;
 	display: block;
 	opacity: 1;
 }
+
 .stack li.learned {
 	left: -100%;
 	width: 0;
+	opacity: 0;
+	transition: 0.2s;
 }
 
 .main-wrapper {
@@ -139,12 +141,14 @@ a:hover {
 
 section {
 	position: absolute;
-	z-index: 1;
+	top: 0;
+	left: 0;
+	z-index: 0;
 	width: 400px;
-	height: 450px;
+	min-height: 450px;
 	background:  #E7E9EF;
 	padding: 20px;
-	transition: 0.3s;
+	padding-bottom: 20px;
 }
 
 input {
@@ -281,6 +285,9 @@ textarea {
 	height: 100%;
 	-webkit-backface-visibility: hidden;
 	position: absolute;
+}
+.active .card {
+	z-index: 10;
 }
 .active .card.flipped {
   -webkit-transform: rotateY( 180deg );

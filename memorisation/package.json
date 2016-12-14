@@ -16,6 +16,7 @@
   "author": "Sergey Zubkov",
   "license": "ISC",
   "devDependencies": {
+    "angular-ui-router-anim-in-out": "^1.0.2",
     "bower": "^1.7.9",
     "express": "^4.13.4",
     "gulp": "^3.9.1",
