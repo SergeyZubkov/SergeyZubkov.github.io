@@ -16,7 +16,6 @@ angular.module('controllers.DeckCtrl', ['controllers.RepeatCardsCtrl'])
 		console.log(DataService.getNearCardToRepeat(deckId))
 		return $scope.deck.cards.length ? DataService.getNearCardToRepeat(deckId).timeToRepeat : '';
 	}
-	console.log($scope.getNearCardToRepeatTime($scope.deck.id))
 
 	$scope.deleteDeck = function() {
 		DataService.deleteDeck($scope.deck.id);
@@ -25,7 +24,6 @@ angular.module('controllers.DeckCtrl', ['controllers.RepeatCardsCtrl'])
 
 
 	$scope.enableLearnMode = function() {
-		console.log($scope.repeatCards)
 		$scope.learnMode = true;
 	}
 

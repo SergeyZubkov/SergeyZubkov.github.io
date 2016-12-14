@@ -8,17 +8,18 @@
 		</li>
 		<li class="list-group-item">
 			<a href="#/deck/{{deck.id}}/create-card">
-				<div class="list-item-title">Создать карточку</div>
+				<div class="list-item-title">Создать </div>
 			</a>
 		</li>
 		<li class="list-group-item">
 			<a ng-if='learnMode' href="#/deck/{{deck.id}}/repeat-card">
-				<div class="list-item-title">Учить карточку</div>
+				<div class="list-item-title">Повторить </div>
 			</a>
 			<a ng-if='!learnMode' class="disable">
 				<div class="list-item-title">Следущий повтор через</div>
 			</a>
-			<span countdown date="{{getNearCardToRepeatTime(deck.id)}}" on-complete="enableLearnMode()" class="badge"></span>
+			<span ng-if='!learnMode' countdown date="{{getNearCardToRepeatTime(deck.id)}}" on-complete="enableLearnMode()" class="badge"></span>
+			<span ng-if='learnMode' class="badge">{{repeatCards.length}}</span>
 		</li>
 		<li class="list-group-item">
 			<a href="#/deck/{{deck.id}}/cards">

@@ -23,8 +23,7 @@ angular.module('directives.countdown', [])
 					return element.text( $filter('dhmsFormat1')(diff));
 				} else {
 					$interval.cancel(interval);
-					scope.onComplete({string: 'учить'});
-					return element.text('учить');
+					scope.onComplete();
 				}
 			};
 
