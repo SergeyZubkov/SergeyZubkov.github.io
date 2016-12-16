@@ -8,7 +8,7 @@ html {
 }
 
 body {
-	background-image: linear-gradient(to bottom,  #A1B0D0, #C7D4E7);
+	background-image: linear-gradient(to bottom,  #A1B0D0, #C7D4E7 4000px);
 	color: #5F6888;
 	display: flex;
 	position: relative;
