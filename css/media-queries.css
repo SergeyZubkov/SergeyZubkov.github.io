@@ -2,6 +2,9 @@
   /*============================
 	=            home            =
 	============================*/
+  .intro-list {
+    margin: 50px -25px 0;
+  }
   .col-md-9 {
     margin-top: 20px; }
   .col-md-9.nopadding-left {
@@ -15,6 +18,9 @@
               transform: rotate(0deg);
       margin: 0 auto;
       width: auto; }
+  .timeline-con {
+    margin: 50px -15px 0 -35px;
+  }
   /*=====  End of home  ======*/
 }
   

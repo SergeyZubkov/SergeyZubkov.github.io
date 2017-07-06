@@ -192,6 +192,10 @@ p.intro-text {
     background: #f4f4f4; }
 
 /*----------  skills  ----------*/
+.section.skill {
+  padding-left: 15px;
+  padding-right: 15px;
+}
 .skill-con {
   margin-top: 50px; }
   .skill-con .skill-list .progress {
