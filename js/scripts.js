@@ -13,7 +13,7 @@ $(document).ready(function() {
 	})
 
 	$('.btn-top').on('click', function() {
-			$('body').animate({
+			$('html, body').animate({
 				scrollTop: 0
 			}, "1000", 'swing')
 	})
