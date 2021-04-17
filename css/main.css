@@ -78,7 +78,9 @@ a {
             transform: rotate(-90deg); }
 
 .header-nav {
-  overflow: hidden; }
+  overflow: hidden; 
+  height: 168px;
+}
   .header-nav li {
     border-top: 1px solid #000;
     position: relative;
@@ -404,10 +406,10 @@ textarea.form-control {
   display: block;
   margin-bottom: 50px;
   border: none; }
-  .portfolio-item:hover .portfolio-item-img:before {
-    z-index: 1;
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1); }
+
+.portfolio-item h2 a {
+  color: #000;
+}
 
 .portfolio-item-img {
   position: relative;
@@ -422,28 +424,5 @@ textarea.form-control {
     text-shadow: 0 0  1px #ddd; }
   .portfolio-item-img img {
     position: relative; }
-  .portfolio-item-img:before {
-    content: '\f0c1';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 150px;
-    background-color: rgba(0, 0, 0, 0.36);
-    z-index: -1;
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-    -webkit-transition: 0.6s;
-    transition: 0.6s;
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
-    text-decoration: inherit;
-    text-align: center;
-    color: #fff;
-    font-size: 40px;
-    line-height: 150px; }
 
 /*=====  End of Portfolio  ======*/
