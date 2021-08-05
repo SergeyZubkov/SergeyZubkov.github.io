@@ -29,3 +29,34 @@ $(document).ready(function() {
 		}
 	})
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+		// фикс бага: пропадает навигационное меню после ресайза
+
+	// https://developer.mozilla.org/ru/docs/Web/API/Window/resize_event
+	(function() {
+		var throttle = function(type, name, obj) {
+			obj = obj || window;
+			var running = false;
+			var func = function() {
+				if (running) { return; }
+				running = true;
+				 requestAnimationFrame(function() {
+					obj.dispatchEvent(new CustomEvent(name));
+					running = false;
+				});
+			};
+			obj.addEventListener(type, func);
+		};
+	
+		/* init - you can init any event */
+		throttle("resize", "optimizedResize");
+	})();
+	
+	// handle event
+	window.addEventListener("optimizedResize", function() {
+		if (window.matchMedia("(max-width: 1000px)").matches) {
+			$('.header-nav').removeAttr("style")
+		}
+	});
+})
